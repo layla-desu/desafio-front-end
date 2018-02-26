@@ -1,0 +1,70 @@
+/* HEADER */
+body {
+    display: block;
+}
+
+#logo > a {
+    width: 380px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../media/logo.png);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu {
+    background-image: url(../media/menu.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    left: 30px;
+    transform: translate(0, -50%);
+}
+
+#menu, #logo > a{
+    text-indent: -9999999em;
+    overflow: hidden;
+    top: 50%;
+    position: absolute;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: block;
+    background-color: #004861;
+    position: relative;
+}
+
+header > div {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+/* CONTENT */
+
+
+
+
+
+
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
