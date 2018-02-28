@@ -1,4 +1,4 @@
-dataN = '';
+//dataN = '';
 
 function fetchJSON(path, callback) {
     var xhr = new XMLHttpRequest();
@@ -15,20 +15,38 @@ function fetchJSON(path, callback) {
 
 fetchJSON('../../data.json', function(data){
     var content = document.getElementById('content');
-    dataN = JSON.stringify(data);
-    content.innerHTML = markup(dataN);
+
+    console.log(data.section[0]);
+
+    content.innerHTML += markup(data.section[0]);
+
+    content.innerHTML += markupAdv();
+
+    content.innerHTML += markup(data.section[1]);
+
+    content.innerHTML += markup(data.section[2]);
+
+    //console.log(markup(data.section[0]));
+    
+    //var node = document.getElementById('content').lastChild;
+    //content.appendChild(markup(data.section[0]));
+    
     //markup(dataN);
 })
 
-function markup(model) {
-    model.section.map(section => { return `
+function markup(section) {
+    //model.section.map(section => { 
+    var sectionTitle = section.name != 'main' ? `<h3>${section.name}</h3>` : '';
+    var sectionBt = section.name != 'main' ? `<button>${section.name} +</button>` : '';
+    return `
     <div id="${section.name}">
+    ${sectionTitle}
         ${section.data.map(item => `
             <section class="item">
                 <div>
                     <a href="${item.url}">
                         <figure>
-                                <img src="${item.image}" alt="${item.title}" width="464" height="261">
+                                <img src="./assets/media/${item.image}" alt="${item.title}">
                         </figure>
                         <div>
                             <h3>${item.label}</h3>
@@ -39,8 +57,18 @@ function markup(model) {
                 </div>
             </section>
         `).join('')}
+        ${sectionBt}
     </div>
-    `;}).join('')
+    `;
+//}).join('')
+}
+
+function markupAdv()  {
+    return `
+        <section id="pub">
+            pub
+        </section>
+    `;
 }
 
 
