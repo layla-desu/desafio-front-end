@@ -38,15 +38,16 @@ function markup(section) {
     //model.section.map(section => { 
     var sectionTitle = section.name != 'main' ? `<h3>${section.name}</h3>` : '';
     var sectionBt = section.name != 'main' ? `<button>${section.name} +</button>` : '';
-    return `
+
+    var markup = `
     <div id="${section.name}">
     ${sectionTitle}
-        ${section.data.map(item => `
+        ${section.data.map((item, index) => `
             <section class="item">
                 <div>
                     <a href="${item.url}">
                         <figure>
-                                <img src="./assets/media/${item.image}" alt="${item.title}">
+                                <img class="img-${index}" src="./assets/media/${item.image}" alt="${item.title}">
                         </figure>
                         <div>
                             <h3>${item.label}</h3>
@@ -60,6 +61,8 @@ function markup(section) {
         ${sectionBt}
     </div>
     `;
+
+    return markup;
 //}).join('')
 }
 
