@@ -56,7 +56,7 @@ function markup(section) {
                             <h2>${item.title}</h2>
                         </a>
                         <p>${item.description}</p>
-                    </div>                    
+                    </div>                   
                 </div>
             </section>
         `).join('')}

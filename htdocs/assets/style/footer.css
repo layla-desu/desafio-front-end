@@ -1,0 +1,41 @@
+/* FOOTER */
+footer{
+    width: 100%;
+}
+
+#logo-footer {
+    background-color: #d5e11f;
+}
+
+#copyright {
+    background-color: #004861;
+}
+
+#logo-footer, #copyright{
+    height: 85px;
+}
+
+#copyright p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#copyright :first-child {
+    padding-top: 25px;
+}
+
+#logo-footer a {
+    display: block;
+    background-image: url(../media/logo-footer.png);
+    width: 166px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    text-indent: -9999999em;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 65%);
+}

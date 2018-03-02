@@ -30,7 +30,7 @@ html, button, input[type="text"] {
     transform: translate(0, -50%);
 }
 
-#menu, #logo > a{
+#menu, #logo > a {
     text-indent: -9999999em;
     overflow: hidden;
     top: 50%;
@@ -51,78 +51,6 @@ header > div {
     width: 100%;
     margin: 0 auto;
 }
-
-/* ITEM */
-.item > div > a > figure > img {
-    width: 50%;
-    margin: 8px 16px;
-}
-
-#main > .item > div > a > figure > img.img-1, #main > .item > div > a > figure > img.img-0 {
-    width: 100%;
-    margin: 0;
-}
-
-.item > div > div {
-    margin: 8px 16px;
-}
-
-.item h3 {
-    color: #004861;
-}
-
-.item a {
-    display: block;
-    width: inherit;
-    height: inherit;
-}
-
-#content > div > h3 {
-    color: #004861;
-    text-transform: uppercase;
-}
-
-/* FOOTER */
-footer{
-    width: 100%;
-}
-
-#logo-footer {
-    background-color: #d5e11f;
-}
-
-#copyright {
-    background-color: #004861;
-}
-
-#logo-footer, #copyright{
-    height: 85px;
-}
-
-#copyright p {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#copyright :first-child {
-    padding-top: 25px;
-}
-
-#logo-footer a {
-    background-image: url(../media/logo.png);
-    width: 80px;
-    height: 70px;
-}
-
-/* ADV */
-#pub {
-    width: 320px;
-    height: 100px;
-    background-color: #ccc;
-}
-
-
-
 
 @media only screen and (min-width: 600px) {
     #logo > a {

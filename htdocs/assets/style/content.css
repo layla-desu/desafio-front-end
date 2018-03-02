@@ -1,0 +1,47 @@
+/* ITEM */
+.item > div > a > figure > img {
+    width: 50%;
+    margin: 8px 16px;
+}
+
+#main > .item > div > a > figure > img.img-1, #main > .item > div > a > figure > img.img-0 {
+    width: 100%;
+    margin: 0;
+}
+
+.item > div > div {
+    margin: 8px 16px;
+}
+
+.item h3 {
+    color: #004861;
+}
+
+.item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+#content > div > h3 {
+    color: #004861;
+    text-transform: uppercase;
+}
+
+#content button {
+    text-transform: uppercase;
+    color: #004861;
+    font-weight: bold;
+    border-top: 1px #e0e0e0 solid;
+    border-bottom: 1px #e0e0e0 solid;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+/* ADV */
+#pub {
+    width: 320px;
+    height: 100px;
+    background-color: #ccc;
+}
