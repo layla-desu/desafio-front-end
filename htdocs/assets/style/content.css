@@ -1,20 +1,42 @@
 /* ITEM */
-.item > div > a > figure > img {
+.item > div > figure > img {
     width: 50%;
     margin: 8px 16px;
 }
 
-#main > .item > div > a > figure > img.img-1, #main > .item > div > a > figure > img.img-0 {
+#main > .item > div > figure > img.img-1, #main > .item > div > figure > img.img-0 {
     width: 100%;
     margin: 0;
 }
 
+#main > .item > div > figure > img.img-2, #main > .item > div > figure > img.img-3 {
+    width: 30%;
+}
+
+.item > div {
+    position: relative;
+}
+
 .item > div > div {
-    margin: 8px 16px;
+    margin: 8px 16px 16px 16px;
 }
 
 .item h3 {
     color: #004861;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    margin-bottom: 4px;
+}
+
+.item h2 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin-bottom: 3px;
+}
+
+.item p {
+    font-size: 0.9em;
+    line-height: 1.4em;
 }
 
 .item a {
@@ -39,9 +61,27 @@
     padding: 10px;
 }
 
+.item > div > a {
+    display: block;
+    background-image: url(../media/share-white.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+#card-0 > a, #card-1 > a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(../media/share.png);
+}
+
 /* ADV */
 #pub {
     width: 320px;
     height: 100px;
     background-color: #ccc;
 }
+
