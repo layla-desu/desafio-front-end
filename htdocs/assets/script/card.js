@@ -49,12 +49,14 @@ function markup(section) {
                         <figure>
                                 <img class="img-${index}" src="./assets/media/${item.image}" alt="${item.title}">
                         </figure>
-                        <div>
-                            <h3>${item.label}</h3>
-                            <h2>${item.title}</h2>
-                            <p>${item.description}</p>
-                        </div>
                     </a>
+                    <div>
+                        <h3>${item.label}</h3>
+                        <a href="${item.url}">
+                            <h2>${item.title}</h2>
+                        </a>
+                        <p>${item.description}</p>
+                    </div>                    
                 </div>
             </section>
         `).join('')}
@@ -69,7 +71,7 @@ function markup(section) {
 function markupAdv()  {
     return `
         <section id="pub">
-            pub
+            <p>advertising 320x100</p>
         </section>
     `;
 }
