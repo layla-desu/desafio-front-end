@@ -3,16 +3,50 @@ footer{
     width: 100%;
 }
 
-#logo-footer {
-    background-color: #d5e11f;
+@media only screen and (min-width: 600px){
+    footer {
+        display: inline-block;
+        background-color: #d5e11f;
+        position: relative;
+        height: 90px;
+    }
+
+    #logo-footer {
+        display: block;
+    }
+
+    #logo-footer h4 a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(20%, 85%);
+    }
+
+    #copyright {
+        display: table;
+        float: right;
+        text-align: right;
+        transform: translate(-20%, 20%);
+    }
+
+    #copyright p {
+        text-align: right;
+        font-size: 0.7em;
+    }
 }
 
-#copyright {
-    background-color: #004861;
-}
-
-#logo-footer, #copyright{
-    height: 85px;
+@media only screen and (max-width: 600px) {
+    #logo-footer {
+        background-color: #d5e11f;
+    }
+    
+    #copyright {
+        background-color: #004861;
+    }
+    
+    #logo-footer, #copyright{
+        height: 85px;
+    }
 }
 
 #copyright p {

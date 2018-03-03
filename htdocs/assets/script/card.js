@@ -39,7 +39,7 @@ function markup(section) {
     <div id="${section.name}">
     ${sectionTitle}
         ${section.data.map((item, index) => `
-            <section class="item">
+            <section class="item" id="sec-${index}">
                 <div id="card-${index}">
                     <figure>
                             <img class="img-${index}" src="./assets/media/${item.image}" alt="${item.title}">
@@ -67,8 +67,10 @@ function markup(section) {
 
 function markupAdv()  {
     return `
-        <section id="pub">
+    <div id="pub">
+        <section>
             <p>advertising 320x100</p>
         </section>
+    <div>
     `;
 }

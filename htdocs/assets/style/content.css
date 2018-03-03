@@ -1,7 +1,96 @@
 /* ITEM */
-.item > div > figure > img {
+.item > div > figure {
+    display: inline-block;
+    margin: 0 16px;
+    float: left;
     width: 50%;
-    margin: 8px 16px;
+}
+
+.item {
+    border-bottom: 1px #c0c0c0 solid;
+    padding: 12px 0;
+}
+
+#main #sec-1, #main #sec-0 {
+    padding-top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    #content {
+        margin: 20px;
+    }
+
+    #content > div {
+        margin: 0 auto;
+    }
+
+    #main #sec-1, #main #sec-0 {
+        max-width: 45%;
+        border: 0;
+        float: left;
+    }
+
+    #main #sec-2, #main #sec-3 {
+        display: inline-block;
+        max-width: 45%;
+        border: 0;
+    }
+
+    #main #card-0 > a, #main #card-1 > a {
+        display: none;
+    }
+
+    #main #card-2 > a, #main #card-3 > a {
+        left: 205px;
+        display: none;
+    }
+
+    .item {
+        max-width: 24%;
+        display: inline-block;
+    }
+
+    .item > div {
+        display: inline-block;
+    }
+
+    .item > div > figure {
+        width: inherit;
+    }
+
+    .item > div > div {
+        display: inherit;
+    }
+
+    .item > div > a {
+        bottom: -5px;
+        left: 203px;
+    }
+}
+
+figure > img {
+    width: 100%;
+}
+
+#main #card-0 > figure, #main #card-1 > figure {
+    margin: 0;
+    display: block;
+    clear: both;
+    width: inherit;
+}
+
+#main #card-0 > div, #main #card-1 > div {
+    display: inline-block;
+}
+
+#main #card-2 > div, #main #card-3 > div {
+    display: table;
+}
+
+#main #card-2 > figure, #main #card-3 > figure {
+    display: inline-block;
+    width: 38%;
+    margin: 0px 16px;
 }
 
 #main > .item > div > figure > img.img-1, #main > .item > div > figure > img.img-0 {
@@ -10,7 +99,7 @@
 }
 
 #main > .item > div > figure > img.img-2, #main > .item > div > figure > img.img-3 {
-    width: 30%;
+    width: 100%;
 }
 
 .item > div {
@@ -18,7 +107,7 @@
 }
 
 .item > div > div {
-    margin: 8px 16px 16px 16px;
+    margin: 0 16px;
 }
 
 .item h3 {
@@ -26,12 +115,21 @@
     text-transform: uppercase;
     font-size: 0.6em;
     margin-bottom: 4px;
+    margin-top: 3px;
 }
 
 .item h2 {
-    font-size: 1.3em;
+    font-size: 0.9em;
     line-height: 1.2em;
     margin-bottom: 3px;
+}
+
+#main #sec-0 h2, #main #sec-1 h2 {
+    font-size: 1.3em;
+}
+
+#main #sec-2 h2, #main #sec-3 h2 {
+    font-size: 1.1em;
 }
 
 .item p {
@@ -62,26 +160,64 @@
 }
 
 .item > div > a {
-    display: block;
-    background-image: url(../media/share-white.png);
+    background-image: url(../media/dark-share.png);
     background-position: right;
     background-repeat: no-repeat;
     background-color: transparent;
     text-indent: -9999em;
     overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 25px;
+    height: 25px;
 }
 
-#card-0 > a, #card-1 > a {
+.item > div h3 {
+    display: table;
+}
+
+.item > div h2 {
+    display: table;
+}
+
+.item > div p {
+    display: inline-block;
+}
+
+#main #card-2 > a, #main #card-3 > a {
+    position: absolute;
+    top: 144px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main #card-2 > a, #main #card-3 > a {
+        left: 132px;
+    }
+}
+
+#main #card-0 > a, #main #card-1 > a {
     position: absolute;
     top: 10px;
     right: 10px;
     background-image: url(../media/share.png);
 }
 
+#Mundo > h3, #Brasil > h3 {
+    margin: 10px 0 0 10px;
+    font-size: 1.5em;
+}
+
 /* ADV */
-#pub {
+#pub > section {
     width: 320px;
     height: 100px;
     background-color: #ccc;
+    margin: 0 auto;
 }
 
+#pub {
+    background-color: #eee;
+    width: 100%; 
+}
